@@ -1,0 +1,5 @@
+@import './../Login/login.module.css';
+
+form {
+  width: 100%;
+}

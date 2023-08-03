@@ -1,0 +1,25 @@
+/* <div className="form-control">
+      <label className="form-title" htmlFor={name}>{title}</label>
+      <input className="form-input" type={type} name={name} onChange={onChange} value={value} />
+    </div> */
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1em 0em;
+}
+
+.form_title {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.form_input {
+  padding: 0.5em;
+  border-radius: 0em;
+  border-width: 0px 0px 2px 0px;
+  width: 100%;
+  background-color: white;
+}

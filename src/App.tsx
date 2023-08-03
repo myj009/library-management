@@ -1,22 +1,24 @@
 import './App.css'
-import Login from './components/Login/Login'
-import HomePage from './components/Home'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
-
-
-
-// Add react router and configure routes for login and signup
-
+import Login from './pages/Login'
+import HomePage from './pages/Home'
+import Signup from './pages/Signup'
+import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import { AuthContextProvider } from './contexts/AuthContext'
+import PrivateRoute from './components/PrivateRoute'
+import PublicRoute from './components/PublicRoute'
 
 function App() {
 
   return (
     <BrowserRouter>
       <div className="root-container">
+      <AuthContextProvider>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
+          <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>} />
+          <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
         </Routes>
+        </AuthContextProvider>
       </div>
     </BrowserRouter>
   )
