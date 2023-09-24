@@ -1,0 +1,11 @@
+.main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  height: 400px;
+  margin: 4rem 0;
+}

@@ -1,0 +1,20 @@
+.main_div {
+  margin: 1rem clamp(1rem, 5vw, 4rem);
+  padding-bottom: 5rem;
+}
+
+.books_div {
+  margin: 2rem 4rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.dropdown {
+  width: 20vw;
+}

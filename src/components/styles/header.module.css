@@ -1,0 +1,62 @@
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main_nav a {
+  text-decoration: none;
+  color: #1100ff;
+}
+
+.nav_logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.nav_links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.nav_links a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav_links li {
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.nav_links li.active {
+  background-color: #ddd;
+}
+
+.nav_links li:hover {
+  background-color: #ddd;
+}
+
+.add_book_btn {
+  margin: 0 1rem;
+}

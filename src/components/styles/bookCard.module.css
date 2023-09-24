@@ -1,0 +1,32 @@
+.main_div {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 4rem;
+}
+
+.book_card {
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.book_card_image {
+  height: 200px;
+  aspect-ratio: 3/4;
+}
+
+.book_card_info {
+  color: black;
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tag_span {
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,11 @@
+.books_div {
+  margin: 2rem 5vh;
+}
+
+.pagination_div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 4rem;
+}

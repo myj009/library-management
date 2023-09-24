@@ -1,4 +1,12 @@
-.app_container { 
+.main_div {
+  background-image: url("./assets/bg_image.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.app_container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0rem;
@@ -23,7 +31,7 @@
 }
 
 .left {
-  background-image: url('./../../assets/left_image.jpeg');
+  background-image: url("./../../assets/left_image.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1em 0 0 1em;
@@ -70,7 +78,8 @@
   font-weight: bold;
 }
 
-h1, p {
+h1,
+p {
   all: unset;
 }
 
@@ -80,8 +89,9 @@ h1, p {
   position: relative;
 }
 
-.line::after, .line::before {
-  content: '';
+.line::after,
+.line::before {
+  content: "";
   position: absolute;
   margin: auto;
   top: 40%;
@@ -98,7 +108,7 @@ h1, p {
   left: 0;
 }
 
-.google_button_div{
+.google_button_div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -122,4 +132,23 @@ h1, p {
   width: 1.5em;
   height: 1.5em;
   margin-right: 0.5em;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
